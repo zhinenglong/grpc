@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package proto;
+option go_package="./;shops";
+
+service Good {
+  rpc Hellow (HeRequest) returns (HeResponse) {}
+}
+
+message HeRequest {
+  string name = 1;
+}
+
+message HeResponse {
+  string name = 1;
+}
